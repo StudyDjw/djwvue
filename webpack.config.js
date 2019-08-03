@@ -32,7 +32,8 @@ module.exports = {
             {test: /\.(jpg|png|gif|jpeg)$/, use: ['url-loader?limit=2000&name=[hash:8]-[name].[ext]']},
             {test: /\.(ttf|eot|svg|woff|woff2)$/, use: 'url-loader'}, //处理字体文件的配置项
             {test: /\.js$/, use: 'babel-loader', exclude: /node_modules/},
-            { test:/\.vue$/,use:'vue-loader'} //解析 vue文件的配置
+            { test:/\.vue$/,use:'vue-loader'}, //解析 vue文件的配置
+            { test:/vue-preview.src.*?js$/,loader:'babel'} //使用vue-cli 需要配置
         ]
     }
     // resolve: {
