@@ -1,5 +1,16 @@
 <template>
+
+
     <div class="goodsinfo-container">
+        <!--红色小球-->
+        <transition
+                v-on:before-enter="beforeEnter"
+                v-on:enter="enter"
+                v-on:after-enter="afterEnter">
+            <div class="ball" v-show="isballhide" ></div>
+        </transition>
+
+
         <!--产品图片展示区域-->
         <div class="mui-card">
             <div class="mui-card-content">
@@ -17,23 +28,18 @@
                         <span>市场价：<s>{{ proInfo.market_price}}</s> &nbsp; &nbsp; &nbsp; 销售价：<span class="now-price">{{ proInfo.sell_price}}</span></span>
                     </p>
                     <div>购买数量:
-                        <div class="mui-numbox" data-numbox-min="1" data-numbox-max="9">
-                            <button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
-                            <input id="test" class="mui-input-numbox" type="number" value="5">
-                            <button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
-                        </div>
+                        <numbox v-bind:quantity ="proInfo.stock_quantity" v-on:getcount ='getSelectCount'></numbox>
                     </div>
                     <p class="btn-box">
                         <button>立即购买</button>
-                        <button>加入购物车</button>
+                        <button v-on:click="addshop">加入购物车</button>
                     </p>
                 </div>
 
             </div>
             <div class="mui-card-footer">页脚</div>
         </div>
-
-        <!--产品参数介绍区域 -->
+         <!--产品参数介绍区域 -->
         <div class="mui-card">
             <div class="mui-card-header">商品参数</div>
             <div class="mui-card-content">
@@ -45,16 +51,17 @@
                 </div>
             </div>
             <div class="mui-card-footer">
-                    <mt-button type="primary" size="large" plain v-on:click="goDesc(id)">图文介绍</mt-button>
-                    <mt-button type="danger" size="large" plain  v-on:click="goComment(id)">商品评论</mt-button>
-
-
+                <mt-button type="primary" size="large" plain v-on:click="goDesc(id)">图文介绍</mt-button>
+                <mt-button type="danger" size="large" plain v-on:click="goComment(id)">商品评论</mt-button>
             </div>
         </div>
     </div>
 </template>
 
 <script>
+    //导入子组件numbox
+    import numbox from '../subcomponents/numbox.vue'
+
     import Toast from 'mint-ui'
     //引入轮播图组件
     import lunbo from '../subcomponents/lunbo.vue'
@@ -64,7 +71,9 @@
             return {
                 id: this.$route.params.id,
                 lunboList: [],
-                proInfo:{}
+                proInfo: {},
+                isballhide: false,
+                selectedcount: 1
             }
         },
         created() {
@@ -72,6 +81,24 @@
             this.getProInfo()
         },
         methods: {
+            beforeEnter(el) {
+                el.style.transform = 'translate(0,0)'
+            },
+            enter(el, done) {
+                //domobject.getBoundingClientRect() //原生获取元素距离左和顶的方法
+                const ball_box = this.$refs.ball.getBoundingClientRect()
+                const mui_badge = document.getElementById('badge').getBoundingClientRect()
+                const y = mui_badge.top - ball_box.top
+                const x = mui_badge.left - ball_box.left
+                el.offsetWidth
+                el.style.transform = `translate(${x}px,${y}px)`
+                el.style.transition = 'all 1s ease '
+                done()
+            },
+            afterEnter() {
+                this.isballhide = !this.isballhide
+
+            },
             getLunbotu() {
                 this.$http.get('http://www.liulongbin.top:3005/api/getthumimages/' + this.id).then((result) => {
                     if (result.body.status === 0) {
@@ -83,50 +110,72 @@
                     }
                 })
             },
-            getProInfo(){
-                this.$http.get('http://www.liulongbin.top:3005/api/goods/getinfo/'+this.id).then((result)=>{
-                    if(result.body.status===0){
+            getProInfo() {
+                this.$http.get('http://www.liulongbin.top:3005/api/goods/getinfo/' + this.id).then((result) => {
+                    if (result.body.status === 0) {
                         //获取数据成功
-                        console.log(result)
                         this.proInfo = result.body.message[0]
-                    }else {
+                    } else {
                         Toast('获取商品参数失败')
                     }
 
                 })
             },
-            goDesc(id){
-                console.log('11')
+            goDesc(id) {
                 //使用编程式导航跳转到图本介绍页面
-                this.$router.push({ name:'goodsdesc',params:{id}})
+                this.$router.push({name: 'goodsdesc', params: {id}})
             },
-            goComment(id){
+            goComment(id) {
                 //使用编程式导航跳转到图本介绍页面
-                this.$router.push({ name:'goodscomment',params:{id}})
+                this.$router.push({name: 'goodscomment', params: {id}})
+            },
+            addshop() {
+                this.isballhide = !this.isballhide
+            },
+            getSelectCount(count) {
+                this.selectedcount = count
+                console.log(this.selectedcount)
             }
         },
         components: {
-            lunbo
+            lunbo,
+            numbox
         }
     }
 </script>
 
 <style scoped lang="scss">
+    .ball {
+        width: 15px;
+        height: 15px;
+        background-color: red;
+        border-radius: 50%;
+        position: absolute;
+        top: 408px;
+        left: 142px;
+        z-index: 10;
+
+    }
+
     .goodsinfo-container {
         background-color: #d0d0d0;
         overflow: hidden;
     }
-    .btn-box{
+
+    .btn-box {
         margin-top: 15px;
     }
-    .now-price{
+
+    .now-price {
         color: red;
         font-weight: bold;
     }
-    .mui-card-footer{
+
+    .mui-card-footer {
         display: block;
     }
-    .mint-button{
+
+    .mint-button {
         margin-top: 10px;
     }
 </style>

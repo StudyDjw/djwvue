@@ -2,28 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d2f7e54-b308-4236-8620-a3f3fdf5a86f" name="默认的" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/goods/goodscomment.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/goods/goodsdesc.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/goods/goodsinfo.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/goods/goodslist.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/news/NewsInfo.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/news/NewsList.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/photo/PhotoInfo.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/photo/PhotoList.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/subcomponents/comment.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/subcomponents/lunbo.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/subcomponents/numbox.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/tabbar/HomeContainer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tabbar/HomeContainer.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/mui/js/mui.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/mui/js/mui.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/goods/goodsdesc.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/goods/goodsdesc.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/goods/goodsinfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/goods/goodsinfo.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -43,20 +27,21 @@
       <file leaf-file-name="goodsinfo.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/goods/goodsinfo.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="86" column="62" selection-start-line="86" selection-start-column="32" selection-end-line="86" selection-end-column="62" />
+            <state relative-caret-position="300">
+              <caret line="30" column="47" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="47" />
               <folding>
-                <element signature="e#2682#3168#0" />
+                <element signature="n#div#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#2;n#div#0;n#template#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="goodsdesc.vue" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/goods/goodsdesc.vue">
+      <file leaf-file-name="numbox.vue" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/subcomponents/numbox.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="925">
-              <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+            <state relative-caret-position="567">
+              <caret line="34" selection-start-line="34" selection-end-line="35" />
             </state>
           </provider>
         </entry>
@@ -111,7 +96,6 @@
         <option value="$PROJECT_DIR$/src/components/subcomponents/comment.vue" />
         <option value="$PROJECT_DIR$/src/components/photo/photolist.vue" />
         <option value="$PROJECT_DIR$/.babelrc" />
-        <option value="$PROJECT_DIR$/src/App.vue" />
         <option value="$PROJECT_DIR$/src/components/photo/PhotoList.vue" />
         <option value="$PROJECT_DIR$/src/components/photo/PhotoInfo.vue" />
         <option value="$PROJECT_DIR$/README.md" />
@@ -121,11 +105,13 @@
         <option value="$PROJECT_DIR$/src/components/tabbar/HomeContainer.vue" />
         <option value="$PROJECT_DIR$/src/components/subcomponents/lunbo.vue" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/router.js" />
-        <option value="$PROJECT_DIR$/src/components/goods/goodsinfo.vue" />
         <option value="$PROJECT_DIR$/src/components/goods/goodscomment.vue" />
         <option value="$PROJECT_DIR$/src/components/goods/goodsdesc.vue" />
+        <option value="$PROJECT_DIR$/src/App.vue" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/components/goods/goodsinfo.vue" />
+        <option value="$PROJECT_DIR$/src/components/subcomponents/numbox.vue" />
       </list>
     </option>
   </component>
@@ -263,12 +249,14 @@
       <workItem from="1564632358851" duration="236000" />
       <workItem from="1564633200593" duration="5853000" />
       <workItem from="1564752585097" duration="2098000" />
-      <workItem from="1564814683659" duration="4079000" />
+      <workItem from="1564814683659" duration="4679000" />
+      <workItem from="1564887123735" duration="6757000" />
+      <workItem from="1564923016878" duration="3515000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108035000" />
+    <option name="totallyTimeSpent" value="118907000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -283,14 +271,14 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49837664" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49837664" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
       <window_info anchor="bottom" id="调试" order="7" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32943678" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info id="Structure" order="1" sideWeight="0.5016234" side_tool="true" weight="0.2528978" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2957447" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.23085107" />
       <window_info anchor="bottom" id="运行" order="7" />
       <window_info id="Favorites" order="2" sideWeight="0.5016234" side_tool="true" weight="0.2528978" />
       <window_info anchor="bottom" id="找到" order="8" weight="0.32918552" />
@@ -514,20 +502,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1725">
-          <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/tabbar/HomeContainer.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="5" column="52" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="52" />
-          <folding>
-            <element signature="n#ul#0;n#div#0;n#template#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -542,26 +520,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="950">
           <caret line="39" column="15" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="15" />
-          <folding>
-            <element signature="e#650#678#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="94" selection-start-line="7" selection-start-column="94" selection-end-line="7" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
@@ -600,20 +558,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/goods/goodsdesc.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="20" column="108" selection-start-line="20" selection-start-column="103" selection-end-line="20" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="73" selection-start-line="7" selection-start-column="73" selection-end-line="7" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/goods/goodsinfo.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="86" column="62" selection-start-line="86" selection-start-column="32" selection-end-line="86" selection-end-column="62" />
+        <state relative-caret-position="300">
+          <caret line="30" column="47" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="47" />
           <folding>
-            <element signature="e#2682#3168#0" />
+            <element signature="n#div#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#template#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/goods/goodsdesc.vue">
+    <entry file="file://$PROJECT_DIR$/src/components/subcomponents/numbox.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="925">
-          <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+        <state relative-caret-position="567">
+          <caret line="34" selection-start-line="34" selection-end-line="35" />
         </state>
       </provider>
     </entry>

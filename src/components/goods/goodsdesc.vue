@@ -1,5 +1,6 @@
 <template>
     <div class="info-container">
+
         <h1 class="info-title">{{ info.title }}</h1>
         <hr/>
         <p v-html="info.content" class="info-content"></p>
@@ -35,6 +36,7 @@
 
 <style lang="scss">
     .info-container {
+
         padding: 0 4px;
         .info-title {
             color: #0062cc;
